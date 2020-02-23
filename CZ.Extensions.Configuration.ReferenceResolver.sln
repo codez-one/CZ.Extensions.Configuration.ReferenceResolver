@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2DC9E32A-B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CZ.Extensions.Configuration.ReferenceResolver.Tests", "test\CZ.Extensions.Configuration.ReferenceResolver.Tests\CZ.Extensions.Configuration.ReferenceResolver.Tests.csproj", "{89737D7C-2712-432F-A17A-A08EB8DDBC58}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{AEC97108-3CBC-4240-B9D3-351438A4B6FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CZ.Extensions.Configuration.ReferenceResolver.Samples.Web", "samples\CZ.Extensions.Configuration.ReferenceResolver.Samples.Web\CZ.Extensions.Configuration.ReferenceResolver.Samples.Web.csproj", "{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,9 +52,22 @@ Global
 		{89737D7C-2712-432F-A17A-A08EB8DDBC58}.Release|x64.Build.0 = Release|Any CPU
 		{89737D7C-2712-432F-A17A-A08EB8DDBC58}.Release|x86.ActiveCfg = Release|Any CPU
 		{89737D7C-2712-432F-A17A-A08EB8DDBC58}.Release|x86.Build.0 = Release|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Debug|x64.Build.0 = Debug|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Debug|x86.Build.0 = Debug|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Release|x64.ActiveCfg = Release|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Release|x64.Build.0 = Release|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6ACD3199-5849-47BD-9F99-85E2232F9DE6} = {3FBF03F0-C0F8-4FE6-9249-0846A35DF65D}
 		{89737D7C-2712-432F-A17A-A08EB8DDBC58} = {2DC9E32A-B558-482A-87B6-D46B14330F87}
+		{D80C215F-D88A-43EF-8F0E-6DF1D325D3DF} = {AEC97108-3CBC-4240-B9D3-351438A4B6FE}
 	EndGlobalSection
 EndGlobal

@@ -11,7 +11,7 @@
             },
             "args": [
                 "build",
-                "${workspaceFolder}/test/CZ.Extensions.Configuration.ReferenceResolver.Tests/CZ.Extensions.Configuration.ReferenceResolver.Tests.csproj",
+                "${workspaceFolder}/CZ.Extensions.Configuration.ReferenceResolver.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

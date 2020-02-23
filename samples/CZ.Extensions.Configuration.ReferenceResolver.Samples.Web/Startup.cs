@@ -7,11 +7,19 @@ namespace CZ.Extensions.Configuration.ReferenceResolver.Samples.Web
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
+    using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
 
     public class Startup
     {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -32,7 +40,12 @@ namespace CZ.Extensions.Configuration.ReferenceResolver.Samples.Web
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    // The value from the appsettings.json:
+                    // "Reference":{
+                    //   "Sample1": "{References[MemoryMessage]@Value read from the in memory provider}"
+                    // },
+                    // The reverence is resolved with the value from the memory provider
+                    await context.Response.WriteAsync(this.Configuration["Reference:Sample1"]);
                 });
             });
         }

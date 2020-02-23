@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CZ.Extensions.Configuration.ReferenceResolver\CZ.Extensions.Configuration.ReferenceResolver.csproj" />
+  </ItemGroup>
+
 </Project>

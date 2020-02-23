@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/test/CZ.Extensions.Configuration.ReferenceResolver.Tests/bin/Debug/netcoreapp3.1/CZ.Extensions.Configuration.ReferenceResolver.Tests.dll",
+            "program": "${workspaceFolder}/samples/CZ.Extensions.Configuration.ReferenceResolver.Samples.Web/bin/Debug/netcoreapp3.1/CZ.Extensions.Configuration.ReferenceResolver.Samples.Web.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/test/CZ.Extensions.Configuration.ReferenceResolver.Tests",
+            "cwd": "${workspaceFolder}/samples/CZ.Extensions.Configuration.ReferenceResolver.Samples.Web",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

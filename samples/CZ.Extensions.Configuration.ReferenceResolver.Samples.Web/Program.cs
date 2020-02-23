@@ -18,6 +18,25 @@ namespace CZ.Extensions.Configuration.ReferenceResolver.Samples.Web
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                // Extend the default configuration provider
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    // Let's add some values as an example
+                    var dict = new Dictionary<string, string>
+                    {
+                        {"MemoryMessage", "Hello from memory!"}
+                    };
+
+                    config.AddInMemoryCollection(dict);
+
+                    // We have to build the current state of the configuration to use it as a source for the resolver.
+                    var buildConfig = config.Build();
+
+                    // Add the resolver to the CobfigurationBuilder with the actual build configuration.
+                    // This will resolve all references in the actual configuration.
+                    // Configuration sources added after this will not be resolved!
+                    config.AddReferenceResolver(buildConfig);
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
