@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Kirsten Kluge</Authors>
+    <PackageProjectUrl>https://github.com/codez-one/CZ.Extensions.Configuration.ReferenceResolver</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/codez-one/CZ.Extensions.Configuration.ReferenceResolver</RepositoryUrl>
+    <Description>This is reference resolver in configuations used in dotnet core.</Description>
+    <Copyright>MIT</Copyright>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
+  </ItemGroup>
+
+</Project>
